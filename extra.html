@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2:800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="extra.css">
+  <script src="extra.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+
+<body>
+<div class="d-none d-sm-block">
+  
+  <div class="d-flex flex-column col-12  " style="padding: 0;">
+    
+    <div  class="Myheader d-flex  align-items-center col-12 justify-content-around"  >
+
+       <a class="logo col-md-7 justify-content-start">
+            <span> <b><span style="color:rgb(63 98 235)">h</span>olly<span style="color:rgb(237 50 84)">b</span>olly.com</b></span>
+        </a>
+        <div class="d-flex flex-md-row flex-column col-md-4 col-3  justify-content-md-around">
+          
+          <input class="col-12 col-md-5 "  name="email" type="text" placeholder="Email" required style="padding-left:6px">
+          <input class="col-12 col-md-5  "  name="password" type="password" placeholder="Password" required style="padding-left:6px">
+        </div>
+        
+        <div class="col-1 " style="padding-left: 0;"><input value="Log in" type="submit" style="margin-left:2px"></div>
+    
+    </div>
+
+
+   <div class="d-flex col-12 " style="padding: 0">
+      <div class=" d-flex col-6 sider justify-content-center">
+        
+        <img class="col-12 col-md-11" src="https://image.freepik.com/free-vector/people-using-laptops-background_1347-106.jpg" >
+      
+      </div>
+      
+      <form class="col-6 d-flex flex-column sider1 " action="#Home" method="POST" onsubmit="return validation();">
+        <div >
+            <h2 class="newfont ">Don't have an Account !</h2>
+            <p class="newfont2 " style="padding-left:3px ;">Quickly SignUp Here.</p>
+        </div>
+
+       <div class="sidespace d-flex flex-md-row flex-column align-content-left " style="padding-top:40px ;">
+          <input  class="col-md-5 box1"  id="firstname" type="text" placeholder="Firstname" required>
+           <div class="col-md-1"></div>
+           <input class="col-md-5 box1"   id="lastname" type="text" placeholder="Lastname" required >
+       </div> 
+       
+       <div class="sidespace d-flex">
+           <input class="col-md-5 col-12 box1" id="email" type="text" placeholder="Email Address" >
+        
+       </div>
+
+       <div class="sidespace d-flex flex-md-row flex-column align-content-left ">
+          <input class="col-md-5 box1" id="password1" type="password" placeholder="Set Password" >
+          <div class="col-md-1"></div>
+          <input class="col-md-5 box1" id="password2" type="password" placeholder="Confirm Password" >
+       </div>
+
+       <div class="sidespace d-flex">
+          <input class="col-md-5 col-12 box1" id="mobile" type="tel"  name="phone" placeholder="Mobile Number" >
+       </div>
+      
+       <div class="sidespace d-flex  flex-row">
+          <label class="col-5 col-md-4 col-lg-3 box2"style="padding-left:4px;">Male<input checked="checked" type="radio" name="gender" value="male" style="margin-left: 10px;"></label>
+          <label class=" col-7 box2">Female <input type="radio" name="gender" value="female" style="margin-left: 10px;"></label>
+       </div>
+       
+       <div class="sidespace" style="padding-top: 10px;">
+          <label style="font-size:15px;font-weight: 400;margin: 0;padding: 0;padding-left: 3px">Are you 18+ <input type="checkbox"  value="yes" style="margin-left: 10px;"></label>
+       </div>
+
+    
+
+       <div class="sidespace">
+          <p style="font-size:10px;margin-top:16px ;padding-left: 3px"><b>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.<b></p>
+          <input value="Sign Up" type="submit" style="font-size:20px;font-weight:bold;border-radius:10px;padding:6px;padding-left:10px;background-color: lightslategray;" />
+       </div>
+    
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="d-sm-none d-block " style="background-color: darkslategrey;height:605px;width:100%">
+
+  <div class="d-flex flex-column flex-column align-items-center " >
+    
+    <div  class="Myheader d-flex flex-column align-items-center col-12 justify-content-center" style="height:100%" >
+       <a class="logo" >
+            <span> <b><span style="color:rgb(63 98 235)">h</span>olly<span style="color:rgb(237 50 84)">b</span>olly.com</b></span>
+        </a>   
+    
+    <div class="d-flex flex-column container col-12 align-items-center" style="padding: 90px 50px 30px 50px;">
+      <input class="col-10  " name="username" type="text" placeholder="username" required style="padding: 6.5px 6px;border: 1px solid black;border-bottom: none;font-size: 16px;">
+      <input class="col-10 " name="password" type="password" placeholder="password" required style="padding:6.5px 6px ;border: 1px solid black;font-size: 16px;">
+    
+
+      </div class="d-flex flex-column col-12">
+    
+        <div class="btn btn-primary col-6 col-sm-4" style="padding-left:30px;padding-right :30px;">
+           Login Here
+        </div>
+      
+        <a href="#forgotpassword" style="font-size: 11px;font-weight: 600;padding-top: 3px;">
+        Forgot Password ??
+        </a>
+      
+        <p  style="font-size: 15px;font-weight: 600;padding-top: 50px;padding-bottom:3px;margin-bottom: 0;font-family: gotu;">
+        Don't have an Account then  SignUp Here !!
+        </p>
+         
+        <div class="btn btn-success col-3">
+          SignUp
+        </div>
+        
+      
+        
+      </div>
+
+    
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>

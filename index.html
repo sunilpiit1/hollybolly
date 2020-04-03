@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>HollyBolly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2:800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script defer src="main.js"></script>
+  
+</head>
+
+<body>
+    <div class="navbar">
+        <diV class="menu" id="menu">
+            <span class="material-icons menu" style="font-size: 30px;">
+                menu
+            </span>
+        </diV>
+        <div class="logo">
+            <span> <b><span style="color:rgb(63 98 235)">h</span>olly<span style="color:rgb(237 50 84)">b</span>olly.com</b></span>
+        </div>
+        <div class="search" >
+            <input  id="searchinput" type="text"  placeholder="Search...">
+
+        </div>
+        <div class="searchicon" id="icon">
+            <button  onclick="search()" class="material-icons " style="font-size: 26px; font-weight: 500;">search </button> 
+        </div>
+        <div class="apps">
+            <span class="material-icons apps" style="font-size: 26px;">apps</span> 
+        </div>
+        <div class=" bell">
+            <span class="material-icons bell" style="font-size: 26px;">notifications_active</span>
+
+        </div>
+        <div class="login" id="login">
+            <div> Login or Signup</div>
+
+        </div>
+        
+        
+         
+        
+       
+        
+    </div>
+    <div class="body">
+
+        
+
+        <div class="leftsidebar" id="leftsidebar">
+
+            <a href="index.html"><span class="material-icons" style="font-size: 40px;" >home</span><div class="text" id="text">Home</div> </a>
+            <a href="https://c123movies.org/home/"><span class="material-icons" style="font-size: 35px;" >trending_up</span> <div class="text" id="text">Trending</div></a>
+            <a href="#Hollywood"><img src="https://previews.123rf.com/images/ultrakreativ/ultrakreativ1205/ultrakreativ120501251/13881970-sign-symbol-stamp-or-icon-for-your-presentation-for-websites-and-many-more-named-hollywood.jpg"> <div class="text" id="text">Hollywood</div></a>
+            <a href="#Bollywood" style="padding-left: 8%"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqVHky1CzwQsNN9spLpAkJfkh7RqRLJfo5Qx9rcg1vSJ7mkNsH&usqp=CAU"> <div class="text" id="text">Bollywood</div></a>
+            <a id="genre"  style="padding-left: 9%"><img src="https://image.flaticon.com/icons/png/512/1710/1710196.png" style="height: 38px;padding-left: 2px;"> <div class="text" id="text">Genre</div></a>
+            <input type="text" class="genrename displaynone" id="genrename" placeholder="Enter Genre" >
+
+        
+        </div>
+
+        <div class="rightsidebar" id="rightsidebar">
+            <div class="header"> Recommended</div>
+            <div class="bigbox">
+                <div class="box">
+                    <a class="image" href="https://friendsfullepisodes.com/browse-watch-friends-season-1-with-english-subtitles-videos-1-date.html?__cf_chl_jschl_tk__=ce01fceacb4efc866165f86d31f622e329de24e8-1585758971-0-Ab1ZC8xV6C5ZDFYRQ7tQ9PfwfSQSzA88f0LdPOK3udGhxCPtFcs9IA7edTWlw8lj77dRtZnHC_PjsynyG6-qm2nPVFgcmkXT7aSCnK5qM5hmkalAtajUTfcIYYDpsUH3SC-0T6kZ4FVeNrhpvW-ZY7OyGiHXDFW1YuBLKH2q7tFKd_5N7KmkL3zjlqh87t5AzuQordy2edl0qfQKIAmXda-Cu4TCeTJ-Hkv2RLPm-k7mzgKZ2lqKmXJTblY8xsW7AK7lYFBhtRn1LYrCD68a3F-OuZxbgUtYmnL-3-wOcEaq--w5pDienxWrueiFKH9upW3kip60OrjgV93KgVCXpCE6a9MZzNCU_70tff_spT6GC5jmHhiO__r36Re1yB8B_g"> <img src="https://vignette.wikia.nocookie.net/friends/images/b/ba/Friends_TV_series.jpeg/revision/latest?cb=20180430013933"></img></a>
+                    <a class="link" href="https://friendsfullepisodes.com/browse-watch-friends-season-1-with-english-subtitles-videos-1-date.html?__cf_chl_jschl_tk__=ce01fceacb4efc866165f86d31f622e329de24e8-1585758971-0-Ab1ZC8xV6C5ZDFYRQ7tQ9PfwfSQSzA88f0LdPOK3udGhxCPtFcs9IA7edTWlw8lj77dRtZnHC_PjsynyG6-qm2nPVFgcmkXT7aSCnK5qM5hmkalAtajUTfcIYYDpsUH3SC-0T6kZ4FVeNrhpvW-ZY7OyGiHXDFW1YuBLKH2q7tFKd_5N7KmkL3zjlqh87t5AzuQordy2edl0qfQKIAmXda-Cu4TCeTJ-Hkv2RLPm-k7mzgKZ2lqKmXJTblY8xsW7AK7lYFBhtRn1LYrCD68a3F-OuZxbgUtYmnL-3-wOcEaq--w5pDienxWrueiFKH9upW3kip60OrjgV93KgVCXpCE6a9MZzNCU_70tff_spT6GC5jmHhiO__r36Re1yB8B_g"> Friends</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/tvshows/game-of-thrones/"> <img src="https://cdn.guidingtech.com/media/assets/WordPress-Import/2017/08/_1200x630_crop_center-center_82_none/276305-thewallpaper.jpg?mtime=1507904278"></img></a>
+                    <a class="link" href="https://c123movies.org/tvshows/game-of-thrones/"> Game of Thrones</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://www.netflix.com/title/70202589"> <img src="https://images2.alphacoders.com/518/thumb-350-518301.jpg"></img></a>
+                    <a class="link" href="https://www.netflix.com/title/70202589"> Sherlock Holmes</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/tvshows/prison-break/"> <img src="https://cdn.wallpapersafari.com/39/40/BUhJ3F.jpg"></img></a>
+                    <a class="link" href="https://c123movies.org/tvshows/prison-break/"> Prison Break</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/tvshows/sacred-games/"> <img src="https://freight.cargo.site/t/original/i/e23bd9b415e9b198fa4be42649cdc993b640b770c6e33db3bb85d1b6e17fd9de/SG-02.jpg"></img></a>
+                    <a class="link" href="https://c123movies.org/tvshows/sacred-games/"> Sacred Games</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/interstellar/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmIcJhYI2ZCKpB1Ioten6se3OPFtZxuubBzKoitSzl115CHHk6&usqp=CAU"></img></a>
+                    <a class="link" href="https://c123movies.org/interstellar/"> Interstellar</a>
+                    <div>Movie (152 min)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/search/pirates+of+the+caribbean/"> <img src="https://cdn.images.express.co.uk/img/dynamic/36/590x/pirates-of-the-caribbean-6-jack-sparrow-johnny-depp-1062229.jpg?r=1545389142858"></img></a>
+                    <a class="link" href="https://c123movies.org/search/pirates+of+the+caribbean/"> Pirates of the Caribbean</a>
+                    <div>Movie (All Parts)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/inception/"> <img src="data:image/jpeg;base64,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"></img></a>
+                    <a class="link" href="https://c123movies.org/inception/"> Inception</a>
+                    <div>Movie (152 min)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://www.netflix.com/watch/70196252?trackId=13752289&tctx=0%2C0%2Cca887b0a0dad2f780a5a3059ae962070434cc524%3A6f1f50b19f3e1c991c96c3e3fab85b873f1155e1%2C%2C"> <img src="https://pixelz.cc/wp-content/uploads/2017/12/breaking-bad-walter-white-and-jesse-pinkman-uhd-4k-wallpaper.jpg"></img></a>
+                    <a class="link" href="https://www.netflix.com/watch/70196252?trackId=13752289&tctx=0%2C0%2Cca887b0a0dad2f780a5a3059ae962070434cc524%3A6f1f50b19f3e1c991c96c3e3fab85b873f1155e1%2C%2C"> Breaking Bad</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>

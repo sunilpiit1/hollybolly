@@ -1,0 +1,807 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar
+{
+    height: 60px;
+    background-color:#eee;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position:fixed;
+    z-index: 5;
+   
+    
+    
+}
+.menu
+{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    margin-right: 1%;
+}
+
+.menu span
+{
+    width: 60%;
+    cursor: pointer;
+}
+
+.logo
+{
+     font-family:Indie Flower;
+     letter-spacing:4px;
+     font-size:180%;
+     display: flex;
+     justify-content: center;
+     width: 22%;
+
+}
+.logo span
+{
+    width: 90%;
+    cursor: pointer;
+
+}
+
+
+.search 
+{
+    
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    align-items: center;
+    
+}
+
+.search input
+{
+    width: 90%;
+    height: 28px;
+    padding-left: 6px;
+    border: none;
+    background-color:white;
+    font-size: 15px;
+    font-family: gotu;
+    font-weight: 500;
+    color: black;
+}
+
+.searchicon
+{
+    
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    margin-right: 10%;  
+    
+
+}
+
+.searchicon button
+{
+    background-color:#eee;
+     border: none;
+    width: 80%;
+    padding-left: 0;
+    cursor: pointer;
+   
+}
+
+.apps
+{
+    
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    
+}
+
+.apps span
+{
+     width: 70%;
+     cursor: pointer;
+}
+
+.bell
+{
+   
+    display: flex;
+    justify-content: center;
+    width: 5%;
+    margin-right: 3%;
+}
+
+.bell span
+{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login
+{
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+    flex: 1;
+    margin-right: 1%;
+    font-size: 13px;
+    font-family: gotu;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color:rgb(194, 190, 190);
+    cursor: pointer;
+    cursor: pointer;
+
+}
+
+
+
+.body
+{
+    padding-top:60px ;
+    display: flex;
+    flex-direction:row;
+    height: 600px;
+}
+
+
+.leftsidebar
+{
+    display: flex;
+    width: 18%;
+    background-color:rgb(250, 250, 250);
+    flex-direction: column;
+    padding-top: 70px;
+    z-index: 2;
+    position: fixed;
+    height:150% ;
+}
+
+.leftsidebar a
+{
+    display:flex;
+    align-items: center;
+    font-family: gotu;
+    text-decoration: none;
+    color: black;
+    padding: 0px 4px 2px 7%;
+}
+
+.text
+{
+    font-weight: 800px;
+    font-size: 11px;
+}
+
+.leftsidebar a:hover
+{
+   background-color: rgb(148, 141, 141);
+   color: black;
+    
+
+}
+
+
+
+.leftsidebar a  span
+{
+    padding-right: 2px;
+}
+
+.leftsidebar a img
+{   display: flex;
+    flex-shrink: 0;
+    width: 36px;
+    padding : 2px 4px 2px 2px;
+    height:35px;
+
+}
+
+
+.leftsidebar1
+{
+    display: flex;
+    width: 7%;
+    background-color:rgb(250, 250, 250);
+    flex-shrink: 0;
+    flex-direction: column;
+    padding-top: 70px;
+    height: 150%;
+    z-index: 2;
+    position: fixed;
+
+}
+
+.leftsidebar1 a
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: gotu;
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+    font-size: 14px;
+    padding: 2px 4px 2px 7%;
+    justify-content: center;
+
+}
+
+.leftsidebar1 a:hover
+{
+   background-color: rgb(148, 141, 141);
+   color: black;
+    
+
+}
+
+
+
+.leftsidebar1 a  span
+{
+    padding-right: 4px;
+}
+
+.leftsidebar1 a img
+{
+    display: flex;
+    flex-shrink: 0;
+    width: 36px;
+    padding : 2px 4px 2px 0px;
+    height:35px;
+    
+
+}
+
+.text1
+{
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+
+
+
+#genre
+{
+    cursor: pointer;
+}
+
+.genrename
+{
+    margin-left: 8%;
+    margin-top: 5px;
+    padding-left: 4px;
+    height: 30px;
+    font-family: gotu;
+}
+
+.displaynone
+{
+    display: none;
+}
+
+.rightsidebar
+{
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    
+}
+
+.rightsidebar1
+{
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    
+}
+
+.header
+{
+    display: flex;
+    height: 73px;
+    font-size: 150%;
+    font-weight: 800;
+    font-family: gotu;
+    align-items: center;
+    padding-left: 3%;
+    margin-top: 2%;
+}
+
+.bigbox
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0% 1% 1% 1%;
+    width: 100%;
+    
+    
+}
+
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    
+    width: 23%;
+    height:220px;
+    padding:0;
+    margin: 1.5%;
+    flex: 1;
+    min-width:24%;
+
+}
+.box a
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+.box a:hover
+{
+    text-decoration: none;
+    color:rgb(10, 87, 158);
+
+}
+
+.image
+{
+   height: 80%;
+}
+
+.link
+{
+    display: flex;
+    align-items: center;
+   height: 12%;
+   font-size: 120% ;
+   font-weight: bold;
+   padding-left: 2%;
+}
+.box div
+{
+    height: 8%;
+    display: flex;
+    align-items: center;
+   font-size: 70% ;
+   font-weight: 300;
+   padding-left: 3%;
+}
+
+.box a img
+{
+    height:100%;
+    width:100%;
+}
+
+
+
+
+@media (max-width: 1005px) 
+{
+    .menu
+{
+    width: 10%;
+    margin-right: 2%;
+}
+
+.logo
+{
+     display: none;
+
+}
+
+
+
+.search 
+{
+    
+    width: 40%;
+    
+}
+
+
+.searchicon
+{
+    
+    margin-right: 8%;   
+
+}
+
+
+.apps
+{
+    
+    margin-right: 3%;
+    
+}
+
+
+
+.bell
+{
+   
+    margin-right: 4%;
+}
+
+
+
+.login
+{
+   width: 20%;
+}
+
+
+.leftsidebar
+{
+    
+    width: 9%;
+    height: 150%;
+    
+   
+    
+}
+
+.leftsidebar a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.leftsidebar a  span
+{
+   
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+    
+}
+
+.leftsidebar a img
+{
+   
+    width: 36px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 40px;
+    
+}
+
+.text
+{
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.leftsidebar1
+{
+    display: flex;
+    width: 25%;
+    height: 90%;
+    
+}
+
+.leftsidebar1 a
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+
+
+
+
+.leftsidebar1 a  span
+{
+    padding-right: 2px;
+}
+
+.leftsidebar1 a img
+{
+    width: 20%;
+    
+}
+
+.text1
+{
+    display: block;
+    font-weight: 100;
+    font-size: 11px;
+
+}
+
+.rightsidebar
+{
+    width: 91%;
+    margin-left: 9%;
+    
+}
+
+.rightsidebar1
+{
+    width: 95%;
+    margin-left: 5%;
+    
+    
+}
+
+
+}
+
+@media (max-width: 813px) 
+{
+    .menu
+{
+    width: 15%;
+    margin-right: 23%;
+}
+
+
+
+
+.search 
+{
+    display: none;
+    
+    
+    
+}
+
+
+.searchicon
+{
+    
+    margin-right: 8%;   
+
+}
+
+
+.apps
+{
+    
+    margin-right: 5%;
+    
+}
+
+
+
+.bell
+{
+   
+    margin-right: 5%;
+}
+
+
+
+.login
+{
+   width: 20%;
+}
+
+
+.leftsidebar
+{
+    
+    display: none;
+    
+}
+
+.leftsidebar1
+{
+    display: flex;
+    width: 30%;
+   
+}
+
+.leftsidebar1 a img 
+{
+    display: flex;
+    flex-shrink: 0;
+}
+
+
+.rightsidebar
+{
+    width: 100%;
+    margin-left: 0;
+}
+
+.rightsidebar1
+{
+    width: 100%;
+    margin-left: 0;
+   
+    
+    
+}
+
+}
+
+
+@media (max-width: 706px) 
+{
+    .menu
+{
+    width: 15%;
+    margin-right: 15%;
+}
+
+
+.leftsidebar1
+{
+    display: flex;
+    width: 35%;
+    background-color:rgb(250, 250, 250);
+    flex-shrink: 0;
+    flex-direction: column;
+    padding-top: 70px;
+    z-index: 2;
+    position: fixed;
+    height: 90%;
+}
+
+.search 
+{
+    display: none;
+    
+    
+    
+}
+
+
+.searchicon
+{
+    
+    margin-right: 12%;   
+
+}
+
+
+.apps
+{
+    
+    margin-right: 6%;
+    
+}
+
+
+
+.bell
+{
+   
+    margin-right: 5%;
+}
+
+
+
+.login
+{
+   width: 20%;
+}
+
+
+
+.bigbox
+{
+    
+    padding: 0% 2% 2% 2%;
+    width: 100%;
+    
+}
+
+.box
+{
+     margin: 2%;
+     width:46% ;
+     min-width: 46%;
+
+}
+
+}
+
+@media (max-width: 490px) 
+{
+
+.navbar
+{
+    justify-content: space-between;
+}    
+    .menu
+{
+    width: 15%;
+    margin-right: 15%;
+}
+
+.leftsidebar1
+{
+    display: flex;
+    width: 40%;
+    background-color:rgb(250, 250, 250);
+    flex-shrink: 0;
+    flex-direction: column;
+    padding-top: 70px;
+    z-index: 2;
+    position: fixed;
+    height: 90%;
+}
+
+
+
+.searchicon
+{
+    
+    margin-right: 8%;   
+
+}
+
+
+.apps
+{
+    
+    display: none;
+    
+}
+
+
+
+.bell
+{
+   
+    display: none;
+}
+
+
+
+.login
+{
+    display: none;
+}
+
+
+
+.bigbox
+{
+    
+    padding: 0% 2% 2% 2%;
+    width: 100%;
+    
+}
+
+.box
+{
+    
+     width:100% ;
+     min-width: 96%;
+
+}
+
+}

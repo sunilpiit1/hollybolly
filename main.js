@@ -54,9 +54,9 @@ var input = document.getElementById("searchinput");
 input.textContent="";
 input.addEventListener("keyup", search);
 
-var input = document.getElementById("searchanim");
-input.textContent="";
-input.addEventListener("keyup", search);
+var input1 = document.getElementById("searchanim");
+input1.textContent="";
+input1.addEventListener("keyup", search);
 
 
 function toggle()
@@ -112,7 +112,7 @@ function search(event)
 {
     if(event.which===13)
     {
-    var searchinput = document.getElementById("searchinput").value;
+    var searchinput = this.value;
     window.location.href="https://c123movies.org/search/"+searchinput;
     }
 }

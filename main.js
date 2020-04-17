@@ -1,7 +1,5 @@
 
-var input = document.getElementById("searchinput");
-input.textContent="";
-input.addEventListener("keyup", search);
+
 
 if(window.innerWidth>813)
 {
@@ -51,6 +49,10 @@ genrename.textContent="";
 genrename.addEventListener("keyup", genresearch);
 
 $("#menu").on("click",toggle);
+
+var input = document.getElementById("searchinput");
+input.textContent="";
+input.addEventListener("keyup", search);
 
 
 function toggle()

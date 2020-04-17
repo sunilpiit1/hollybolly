@@ -54,6 +54,10 @@ var input = document.getElementById("searchinput");
 input.textContent="";
 input.addEventListener("keyup", search);
 
+var input = document.getElementById("searchanim");
+input.textContent="";
+input.addEventListener("keyup", search);
+
 
 function toggle()
 {

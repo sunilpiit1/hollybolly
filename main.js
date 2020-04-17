@@ -1,5 +1,15 @@
 
-
+jQuery(function($){
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+  
+    $(window).resize(function() {
+      if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
+        location.reload();
+        return;
+      }
+    });
+  });
 
 if(window.innerWidth>813)
 {
@@ -7,7 +17,8 @@ if(window.innerWidth>813)
 }
 else if(window.innerWidth<=813)
 {
-   $("#icon").on("click",function(){
+    
+      $("#icon").on("click",function(){
       $("#navbar").toggleClass("navbar navbar1");
       $("#icon").toggleClass("searchicon searchicon1");
       $("#apps").toggleClass("apps apps1");

@@ -225,7 +225,37 @@ body
   
 }
 
+.animsearch
+{
+    
+    height: 60px;
+    visibility: hidden;
+    width: 50%;
+    align-items: center;
+    letter-spacing: .2mm;
+    opacity: 1;
+    z-index: 7;
+    position: fixed;
+   
+    margin-left: 16%;
+    
+}
 
+.animsearch1 
+{
+    
+    height: 60px;
+    visibility: hidden;
+    width: 50%;
+    align-items: center;
+    letter-spacing: .2mm;
+    opacity: 1;
+    z-index: 7;
+    position: fixed;
+    
+    margin-left: 16%;
+    
+}
 
 .apps
 {
@@ -272,7 +302,7 @@ body
 
 .body
 {
-    padding-top:40px ;
+    padding-top:60px ;
     display: flex;
     flex-direction:row;
     height: 600px;
@@ -281,7 +311,7 @@ body
 
 .body1
 {
-    padding-top:40px ;
+    padding-top:60px ;
     display: flex;
     flex-direction:row;
     height: 600px;
@@ -728,24 +758,12 @@ body
     
 }
 
-.animsearch
-{
-    display: none;
-}
+
 
 .animsearch1 
 {
     
-    height: 25px;
-    display: block;
-    width: 50%;
-    align-items: center;
-    letter-spacing: .2mm;
-    opacity: 1;
-    z-index: 7;
-    position: fixed;
-    margin-top: 16px;
-    margin-left: 16%;
+    visibility: visible;
     
 }
 
@@ -765,6 +783,7 @@ body
     color: black;
     letter-spacing: .2mm;
     outline:none;
+    margin-top: 16px;
    
 }
 

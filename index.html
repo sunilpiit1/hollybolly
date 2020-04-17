@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script defer src="main.js"></script>
@@ -31,15 +33,12 @@
 
         </div>
         <div class="searchicon" id="icon">
-            <button  onclick="search()" class="material-icons " style="font-size: 26px; font-weight: 500;">search </button> 
+            <button  class="material-icons " style="font-size: 26px; font-weight: 500;">search </button> 
         </div>
         <div class="apps">
             <span class="material-icons apps" style="font-size: 26px;">apps</span> 
         </div>
-        <div class=" bell">
-            <span class="material-icons bell" style="font-size: 26px;">notifications_active</span>
-
-        </div>
+       
         <div class="login" id="login">
             <div> Login or Signup</div>
 
@@ -57,11 +56,11 @@
 
         <div class="leftsidebar" id="leftsidebar">
 
-            <a href="index.html"><span class="material-icons" style="font-size: 40px;" >home</span><div class="text" id="text">Home</div> </a>
-            <a href="https://c123movies.org/home/"><span class="material-icons" style="font-size: 35px;" >trending_up</span> <div class="text" id="text">Trending</div></a>
-            <a href="#Hollywood"><img src="https://previews.123rf.com/images/ultrakreativ/ultrakreativ1205/ultrakreativ120501251/13881970-sign-symbol-stamp-or-icon-for-your-presentation-for-websites-and-many-more-named-hollywood.jpg"> <div class="text" id="text">Hollywood</div></a>
-            <a href="#Bollywood" style="padding-left: 8%"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqVHky1CzwQsNN9spLpAkJfkh7RqRLJfo5Qx9rcg1vSJ7mkNsH&usqp=CAU"> <div class="text" id="text">Bollywood</div></a>
-            <a id="genre"  style="padding-left: 9%"><img src="https://image.flaticon.com/icons/png/512/1710/1710196.png" style="height: 38px;padding-left: 2px;"> <div class="text" id="text">Genre</div></a>
+            <a  href="index.html"><img  src="https://www.bigfishdiving.com/wp-content/uploads/2016/06/BFD-icon-home.png"><div style="margin-left: 2px;" class="text home" id="text">Home</div> </a>
+            <a href="https://c123movies.org/home/"><img src="data:image/jpeg;base64,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" ><div class="text" id="text">Trending</div></a>
+            <a href="#Hollywood"><img src="https://lh3.googleusercontent.com/proxy/7pXyhe88zjsLaHI2BqoKcQzOaxKOx4tDHXeVTAizDyopXdDtP4IC-r3PTDQbDI09KQfOHRq-bH4GAm78CJDJjTQ9"> <div class="text" id="text">Hollywood</div></a>
+            <a href="#Bollywood" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqVHky1CzwQsNN9spLpAkJfkh7RqRLJfo5Qx9rcg1vSJ7mkNsH&usqp=CAU"> <div class="text" id="text">Bollywood</div></a>
+            <a id="genre" ><img  src="https://image.flaticon.com/icons/png/512/1710/1710196.png" > <div style="margin-left: 0px;"class="text" id="text">Genre</div></a>
             <input type="text" class="genrename displaynone" id="genrename" placeholder="Enter Genre" >
 
         
@@ -70,6 +69,22 @@
         <div class="rightsidebar" id="rightsidebar">
             <div class="header"> Recommended</div>
             <div class="bigbox">
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/tvshows/la-casa-de-papel/"> <img src="https://images.hdqwalls.com/wallpapers/4k-money-heist-netflix-2019-9f.jpg"></img></a>
+                    <a class="link" href="https://c123movies.org/tvshows/la-casa-de-papel/"> Money Heist</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/search/lord+of+the+rings/"> <img src="./photos/LOTR.jpg"></a>
+                    <a class="link" href="https://c123movies.org/search/lord+of+the+rings/"> LOTR</a>
+                    <div>Movie (All Parts)</div>
+                </div>
+                <div class="box">
+                    <a class="image" href="https://c123movies.org/tvshows/naruto-shipp-den/"> <img src="./photos/naruto.jpg"></img></a>
+                    <a class="link" href="https://c123movies.org/tvshows/naruto-shipp-den/"> Naruto</a>
+                    <div>TV Series (All Seasons)</div>
+                </div>
+
                 <div class="box">
                     <a class="image" href="https://friendsfullepisodes.com/browse-watch-friends-season-1-with-english-subtitles-videos-1-date.html?__cf_chl_jschl_tk__=ce01fceacb4efc866165f86d31f622e329de24e8-1585758971-0-Ab1ZC8xV6C5ZDFYRQ7tQ9PfwfSQSzA88f0LdPOK3udGhxCPtFcs9IA7edTWlw8lj77dRtZnHC_PjsynyG6-qm2nPVFgcmkXT7aSCnK5qM5hmkalAtajUTfcIYYDpsUH3SC-0T6kZ4FVeNrhpvW-ZY7OyGiHXDFW1YuBLKH2q7tFKd_5N7KmkL3zjlqh87t5AzuQordy2edl0qfQKIAmXda-Cu4TCeTJ-Hkv2RLPm-k7mzgKZ2lqKmXJTblY8xsW7AK7lYFBhtRn1LYrCD68a3F-OuZxbgUtYmnL-3-wOcEaq--w5pDienxWrueiFKH9upW3kip60OrjgV93KgVCXpCE6a9MZzNCU_70tff_spT6GC5jmHhiO__r36Re1yB8B_g"> <img src="https://vignette.wikia.nocookie.net/friends/images/b/ba/Friends_TV_series.jpeg/revision/latest?cb=20180430013933"></img></a>
                     <a class="link" href="https://friendsfullepisodes.com/browse-watch-friends-season-1-with-english-subtitles-videos-1-date.html?__cf_chl_jschl_tk__=ce01fceacb4efc866165f86d31f622e329de24e8-1585758971-0-Ab1ZC8xV6C5ZDFYRQ7tQ9PfwfSQSzA88f0LdPOK3udGhxCPtFcs9IA7edTWlw8lj77dRtZnHC_PjsynyG6-qm2nPVFgcmkXT7aSCnK5qM5hmkalAtajUTfcIYYDpsUH3SC-0T6kZ4FVeNrhpvW-ZY7OyGiHXDFW1YuBLKH2q7tFKd_5N7KmkL3zjlqh87t5AzuQordy2edl0qfQKIAmXda-Cu4TCeTJ-Hkv2RLPm-k7mzgKZ2lqKmXJTblY8xsW7AK7lYFBhtRn1LYrCD68a3F-OuZxbgUtYmnL-3-wOcEaq--w5pDienxWrueiFKH9upW3kip60OrjgV93KgVCXpCE6a9MZzNCU_70tff_spT6GC5jmHhiO__r36Re1yB8B_g"> Friends</a>
@@ -96,7 +111,7 @@
                     <div>TV Series (All Seasons)</div>
                 </div>
                 <div class="box">
-                    <a class="image" href="https://c123movies.org/interstellar/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmIcJhYI2ZCKpB1Ioten6se3OPFtZxuubBzKoitSzl115CHHk6&usqp=CAU"></img></a>
+                    <a class="image" href="https://c123movies.org/interstellar/"> <img src="./photos/interstellar.jpg"></img></a>
                     <a class="link" href="https://c123movies.org/interstellar/"> Interstellar</a>
                     <div>Movie (152 min)</div>
                 </div>
@@ -106,7 +121,7 @@
                     <div>Movie (All Parts)</div>
                 </div>
                 <div class="box">
-                    <a class="image" href="https://c123movies.org/inception/"> <img src="data:image/jpeg;base64,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"></img></a>
+                    <a class="image" href="https://c123movies.org/inception/"> <img src="./photos/inception.jpg"></img></a>
                     <a class="link" href="https://c123movies.org/inception/"> Inception</a>
                     <div>Movie (152 min)</div>
                 </div>
@@ -116,7 +131,19 @@
                     <div>TV Series (All Seasons)</div>
                 </div>
                 
+                
             </div>
         </div>
     </div>
+
+   <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+           crossorigin="anonymous">
+   </script>
+   <script
+       src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+       crossorigin="anonymous">
+   </script>
 </body>

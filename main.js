@@ -1,8 +1,11 @@
 
-
 var input = document.getElementById("searchinput");
 input.textContent="";
 input.addEventListener("keyup", search);
+
+var search = document.querySelector(".searchicon");
+search.addEventListener("click",searchbyicon);
+
 
 var login = document.getElementById("login");
 login.addEventListener("click", loginpage);
@@ -15,34 +18,65 @@ var genrename = document.getElementById("genrename");
 genrename.textContent="";
 genrename.addEventListener("keyup", genresearch);
 
-var menu =document.getElementById("menu");
-menu.addEventListener("click",toggle);
-
-var leftsidebar = document.getElementById("leftsidebar");
-var text = document.querySelectorAll("#text");
-var rightsidebar = document.getElementById("rightsidebar");
+$("#menu").on("click",toggle);
 
 
 function toggle()
 {
-     leftsidebar.classList.toggle("leftsidebar");
-     leftsidebar.classList.toggle("leftsidebar1");
+    
+    if(window.innerWidth>813)
+    {
 
-     for(var i=0;i<text.length;i++)
+     $("#leftsidebar").hide(120 ,function(){
+         
+        $("#leftsidebar").toggleClass("leftsidebar leftsidebar1");
+        $("#leftsidebar").show(120);
+    });
+
+     }
+     else
      {
-        text[i].classList.toggle("text");
-        text[i].classList.toggle("text1");
+
+        if($("#leftsidebar").css("display")=="none")
+        {
+            $("#leftsidebar").toggleClass("leftsidebar leftsidebar1");
+            $("#leftsidebar").show(120);
+        }
+        else{
+            
+            $("#leftsidebar").hide(120); 
+            $("#leftsidebar").toggleClass("leftsidebar leftsidebar1");
+        }
+        
+        
+        
+     }
+       
+       
+     
+     
+     var a = $(".text");
+     if(a.length!=0)
+     {
+        $(".text").toggleClass("text text1");
+     }
+     else{
+        $(".text1").toggleClass("text text1");
      }
      
-     rightsidebar.classList.toggle("rightsidebar");
-     rightsidebar.classList.toggle("rightsidebar1");
+
+     $("#rightsidebar").toggleClass("rightsidebar rightsidebar1");
+     
 
 }
 
-function search()
+function search(event)
 {
+    if(event.which===13)
+    {
     var searchinput = document.getElementById("searchinput").value;
     window.location.href="https://c123movies.org/search/"+searchinput;
+    }
 }
 
 function loginpage()
@@ -59,4 +93,10 @@ function genresearch()
 {
     
     window.location.href="https://c123movies.org/genre/"+genrename.value;
+}
+
+function searchbyicon()
+{
+    var searchinput = document.getElementById("searchinput").value;
+    window.location.href="https://c123movies.org/search/"+searchinput;
 }

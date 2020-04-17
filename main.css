@@ -297,7 +297,7 @@ body
     padding-top: 70px;
     z-index: 2;
     position: fixed;
-    height:200% ;
+    height:400% ;
 }
 
 .leftsidebar a
@@ -855,6 +855,10 @@ body
     
 }
 
+.text1
+{
+    font-size: 16px;
+}
 
 .rightsidebar
 {

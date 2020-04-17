@@ -5,21 +5,30 @@
   
   <title>HollyBolly</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+2:800&display=swap" rel="stylesheet">
+ <!-- <link href="https://fonts.googleapis.com/css?family=Baloo+2:800&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+--> 
   <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="main.js"></script>
+  
+ 
+
+<script defer src="main.js"></script>
+
+   
   
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="animsearch" id="animsearch">
+         <input  id="searchinput" type="text"  placeholder="Search...">
+    </div>
+    <div class="navbar" id="navbar">
         <diV class="menu" id="menu">
             <span class="material-icons menu" style="font-size: 30px;">
                 menu
@@ -28,14 +37,14 @@
         <div class="logo">
             <span> <b><span style="color:rgb(63 98 235)">h</span>olly<span style="color:rgb(237 50 84)">b</span>olly.com</b></span>
         </div>
-        <div class="search" >
+        <div class="search" id="search">
             <input  id="searchinput" type="text"  placeholder="Search...">
 
         </div>
         <div class="searchicon" id="icon">
             <button  class="material-icons " style="font-size: 26px; font-weight: 500;">search </button> 
         </div>
-        <div class="apps">
+        <div class="apps" id="apps">
             <span class="material-icons apps" style="font-size: 26px;">apps</span> 
         </div>
        
@@ -50,7 +59,7 @@
        
         
     </div>
-    <div class="body">
+    <div class="body" id="body">
 
         
 
@@ -106,7 +115,7 @@
                     <div>TV Series (All Seasons)</div>
                 </div>
                 <div class="box">
-                    <a class="image" href="https://c123movies.org/tvshows/sacred-games/"> <img src="https://freight.cargo.site/t/original/i/e23bd9b415e9b198fa4be42649cdc993b640b770c6e33db3bb85d1b6e17fd9de/SG-02.jpg"></img></a>
+                    <a class="image" href="https://c123movies.org/tvshows/sacred-games/"> <img src="./photos/sacred_games.jpg"></img></a>
                     <a class="link" href="https://c123movies.org/tvshows/sacred-games/"> Sacred Games</a>
                     <div>TV Series (All Seasons)</div>
                 </div>
@@ -135,15 +144,15 @@
             </div>
         </div>
     </div>
-
-   <script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-           crossorigin="anonymous">
-   </script>
-   <script
-       src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-       crossorigin="anonymous">
-   </script>
+    <script 
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous">
+  </script>
+  <script 
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous">
+  </script>
+   
 </body>

@@ -3,8 +3,40 @@ var input = document.getElementById("searchinput");
 input.textContent="";
 input.addEventListener("keyup", search);
 
-var search = document.querySelector(".searchicon");
-search.addEventListener("click",searchbyicon);
+if(window.innerWidth>813)
+{
+    $("#icon").on("click",searchbyicon);
+}
+else if(window.innerWidth<=813)
+{
+   $("#icon").on("click",function(){
+      $("#navbar").toggleClass("navbar navbar1");
+      $("#icon").toggleClass("searchicon searchicon1");
+      $("#apps").toggleClass("apps apps1");
+      $("#body").toggleClass("body body1");
+      $("#animsearch").toggleClass("animsearch animsearch1");
+      
+      $("#animsearch").show(1000,function()
+      {
+        $("#body").on("click",function(){
+
+            $("#navbar").toggleClass("navbar navbar1");
+            $("#icon").toggleClass("searchicon searchicon1");
+            $("#apps").toggleClass("apps apps1");
+            $("#animsearch").toggleClass("animsearch animsearch1");
+            $("#body").toggleClass("body body1");
+            $("#body").off();
+    
+          })
+
+      })
+      
+      
+      
+      
+    }
+   )
+}
 
 
 var login = document.getElementById("login");
@@ -23,7 +55,7 @@ $("#menu").on("click",toggle);
 
 function toggle()
 {
-    
+    //console.log("its working");
     if(window.innerWidth>813)
     {
 

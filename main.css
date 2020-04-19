@@ -328,6 +328,7 @@ body
     z-index: 2;
     position: fixed;
     height:400% ;
+    
 }
 
 .leftsidebar a
@@ -377,6 +378,27 @@ body
 {
     font-size: 16px ;
     font-weight: 600;
+}
+
+.login2
+{
+    max-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex: 1;
+    margin-top: 200px;
+    margin-left: 20%;
+    font-size: 16px;
+    font-family: Amatic SC;
+    font-weight: 600;
+    border-radius: 2px;
+    background-color:rgb(194, 190, 190);
+    cursor: pointer;
+    box-shadow: none;
+    display: none;
+   
 }
 
 
@@ -451,11 +473,13 @@ body
 
 .genrename
 {
-    margin-left: 8%;
+    margin-left: 5%;
+    width: 90%;
     margin-top: 5px;
     padding-left: 4px;
     height: 30px;
-    font-family: gotu;
+    font-family: Amatic SC;
+   
 }
 
 .displaynone
@@ -1078,5 +1102,26 @@ body
      min-width: 92%;
 
 }
+
+.login2
+{
+    max-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex: 1;
+    margin-top: 200px;
+    margin-left: 20%;
+    font-size: 16px;
+    font-family: Amatic SC;
+    font-weight: 600;
+    border-radius: 2px;
+    background-color:rgb(194, 190, 190);
+    cursor: pointer;
+    box-shadow: none;
+   
+}
+
 
 }

@@ -51,6 +51,9 @@ else if(window.innerWidth<=813)
 var login = document.getElementById("login");
 login.addEventListener("click", loginpage);
 
+var login2 = document.getElementById("login2");
+login2.addEventListener("click", loginpage);
+
 
 var genre = document.getElementById("genre");
 genre.addEventListener("click",remove);
@@ -141,7 +144,12 @@ function remove()
 function genresearch()
 {
     
+    if(event.which===13)
+    {
+    var searchinput = this.value;
     window.location.href="https://c123movies.org/genre/"+genrename.value;
+    }
+    
 }
 
 function searchbyicon()

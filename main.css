@@ -305,7 +305,7 @@ body
     padding-top:60px ;
     display: flex;
     flex-direction:row;
-    height: 600px;
+    height: 800px;
     margin: 0;
 }
 
@@ -314,7 +314,7 @@ body
     padding-top:60px ;
     display: flex;
     flex-direction:row;
-    height: 600px;
+    height: 800px;
 }
 
 
@@ -334,7 +334,7 @@ body
 {
     display:flex;
     align-items: center;
-    font-family: Shadows Into Light;
+    font-family: Amatic SC;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -388,7 +388,7 @@ body
     flex: 0;
     flex-direction: column;
     padding-top: 70px;
-    height: 150%;
+    height: 400%;
     z-index: 2;
     position: fixed;
 
@@ -399,7 +399,7 @@ body
     display:flex;
     flex-direction: column;
     align-items: center;
-    font-family: Shadows Into Light;
+    font-family: Amatic SC;
     text-decoration: none;
     color: black;
     font-weight: 500px;
@@ -624,7 +624,7 @@ body
 {
     
     width: 9%;
-    height: 150%;
+    height: 400%;
     display: flex;
    
     align-items: center;
@@ -668,7 +668,7 @@ body
 {
     display: flex;
     width: 25%;
-    height: 90%;
+    height: 150%;
     
 }
 
@@ -1011,7 +1011,7 @@ body
 .leftsidebar1
 {
     display: flex;
-    width: 40%;
+    width: 55%;
     background-color:rgb(250, 250, 250);
     flex-shrink: 0;
     flex-direction: column;
@@ -1058,12 +1058,15 @@ body
     display: none;
 }
 
-
+.header
+{
+    padding-left: 7%;
+}
 
 .bigbox
 {
     
-    padding: 0% 2% 2% 2%;
+    padding: 0% 5% 2% 5%;
     width: 100%;
     
 }
@@ -1072,7 +1075,7 @@ body
 {
     
      width:100% ;
-     min-width: 96%;
+     min-width: 90%;
 
 }
 
